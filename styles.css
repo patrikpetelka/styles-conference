@@ -33,6 +33,8 @@ p {
   }
 }
 
+/* kako mogu bez ovoga gore flex-flow column */
+
 .header__caption {
   text-transform: uppercase;
   font-size: 2.6em;
