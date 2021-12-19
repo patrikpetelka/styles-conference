@@ -114,6 +114,8 @@ button {
   border-radius: 4px;
 }
 
+/* pojasniti ponašanje slika kod responzivnosti, overflow? */
+
 .footer {
   display: flex;
   justify-content: center;
