@@ -1,49 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 body {
   font-family: "Lato", sans-serif;
+  margin: 0;
 }
 
 .header {
   padding: 32px 0px 32px;
   background: rgb(37, 55, 70);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.wrapper {
-  max-width: 1200px;
-  margin: 0;
-}
-
-p {
-  margin-block: 12px 12px;
-}
-
-.container {
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (max-width: 1000px) {
-  .container {
-    flex-flow: column;
+@media (max-width: 800px) {
+  .header {
+    padding: 16px;
   }
 }
 
-/* kako mogu bez ovoga gore flex-flow column */
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-.header__caption {
-  text-transform: uppercase;
+p {
+  margin-block: 8px 8px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .info__container {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.header__logo {
   font-size: 2.6em;
   color: white;
   padding: 8px 8px;
-  margin: 0 32px 0;
 }
 
-.header__caption p {
+.header__logo p {
   margin-block-end: 0;
   margin-block-start: 0;
 }
@@ -56,33 +57,41 @@ p {
   align-self: flex-end;
 }
 
-.menu-area {
+.menu__area {
   list-style: none;
 }
 
-.menu-area li {
+.menu__area li {
   display: inline-block;
   font-weight: bold;
-  padding: 0px 4px;
+  padding: 0px 8px;
 }
 
-.menu-area li a {
+.menu__area li a {
   color: white;
   text-decoration-line: none;
 }
 
-.hero {
+.menu__area li a:hover{
+  font-size: 1.3em;
+  text-shadow: 0 0 8px white;
+}
+
+.header__text {
   color: white;
   text-align: center;
-  margin: 32px 0 0;
+  margin: 20px 0;
+  font-size: 1.2em;
 }
 
-.hero__caption {
+.header__caption {
   color: rgb(89, 125, 117);
   font-size: 2em;
+  margin: 52px 0 20px 0;
+  text-align: center;
 }
 
-button {
+.header__button {
   margin: 12px 0px;
   text-transform: uppercase;
   font-size: 0.8em;
@@ -91,39 +100,57 @@ button {
   background-color: transparent;
   color: white;
   padding: 20px 24px;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.04);
+  background-color: #ffffff;
+  color: rgb(37, 55, 70);
 }
 
 .info {
-  background: white;
-  padding: 40px 40px;
+  background: #ffffff;
   color: grey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .info {
+    padding: 16px;
+  }
 }
 
 .info__container {
-  padding: 20px 20px;
-  max-width: 260px;
+  margin: 24px 0;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.info__container__card {
+  padding: 0 12px;
 }
 
 .info__container img {
-  width: 260px;
+  width: 240px;
   height: 180px;
   border-radius: 4px;
 }
 
-/* pojasniti ponašanje slika kod responzivnosti, overflow? */
-
 .footer {
-  display: flex;
-  justify-content: center;
   background: rgb(37, 55, 70);
   padding: 24px 0px 200px 0px;
 }
-.footer .container {
-  gap: 0 256px;
+
+@media (max-width: 800px) {
+  .footer {
+    padding: 24px 4px 200px 12px;
+  }
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .menu--footer {
@@ -147,18 +174,18 @@ button {
 .text--bold {
   font-weight: bold;
 }
-.text--size4 {
+.text--sizesmaller {
   font-size: 0.6em;
 }
 
-.text--size3 {
+.text--sizesmall {
   font-size: 0.9em;
 }
 
-.text--size2 {
+.text--sizemedium {
   font-size: 1.2em;
 }
 
-.text--size1 {
+.text--sizebig {
   font-size: 1.6em;
 }
