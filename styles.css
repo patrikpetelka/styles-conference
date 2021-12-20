@@ -125,6 +125,13 @@ button {
 .footer .container {
   gap: 0 256px;
 }
+
+.menu--footer {
+  font-weight: 100;
+  text-transform: capitalize;
+  font-size: 0.6;
+}
+
 .text--uppercase {
   text-transform: uppercase;
 }
@@ -139,6 +146,9 @@ button {
 
 .text--bold {
   font-weight: bold;
+}
+.text--size4 {
+  font-size: 0.6em;
 }
 
 .text--size3 {
