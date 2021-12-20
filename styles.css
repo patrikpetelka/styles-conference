@@ -112,7 +112,7 @@ button:hover {
 }
 
 .info__container {
-  margin: 24px 0;
+  margin: 20px 0;
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
@@ -125,6 +125,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 12px 0;
   }
 }
 
